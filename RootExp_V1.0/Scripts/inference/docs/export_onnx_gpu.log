@@ -1,0 +1,27 @@
+[export] selective_scan_fn -> selective_scan_ref (no CUDA custom op; ONNX-safe)
+[1/4] loading weights on cuda …
+[load_state_dict] missing_keys=0, unexpected_keys=0
+      loaded in 1.4s
+[2/4] warmup forward (builds scan graph once) …
+      warmup 1.3s  output shape (1, 1, 224, 224)
+[3/4] torch.onnx.export — please wait (SSM loop → large ONNX graph) …
+/home/young/anaconda3/envs/vmunet/lib/python3.8/site-packages/mamba_ssm/ops/selective_scan_interface.py:142: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if i == u.shape[2] - 1:
+/home/young/桌面/testGeModel/DA_strip_inference_portable/models/rootbin.py:261: TracerWarning: Converting a tensor to a Python boolean might cause the trace to be incorrect. We can't record the data flow of Python values, so this value will be treated as a constant in the future. This means that the trace might not generalize to other inputs!
+  if eam_feat.shape[2:] != x5.shape[2:]:
+/home/young/anaconda3/envs/vmunet/lib/python3.8/site-packages/torch/onnx/symbolic_helper.py:1457: UserWarning: ONNX export mode is set to TrainingMode.EVAL, but operator 'instance_norm' is set to train=True. Exporting with train=True.
+  warnings.warn(
+/home/young/anaconda3/envs/vmunet/lib/python3.8/site-packages/torch/onnx/_internal/jit_utils.py:258: UserWarning: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function. (Triggered internally at ../torch/csrc/jit/passes/onnx/shape_type_inference.cpp:1884.)
+  _C._jit_pass_onnx_node_shape_type_inference(node, params_dict, opset_version)
+/home/young/anaconda3/envs/vmunet/lib/python3.8/site-packages/torch/onnx/utils.py:687: UserWarning: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function. (Triggered internally at ../torch/csrc/jit/passes/onnx/shape_type_inference.cpp:1884.)
+  _C._jit_pass_onnx_graph_shape_type_inference(
+/home/young/anaconda3/envs/vmunet/lib/python3.8/site-packages/torch/onnx/utils.py:687: UserWarning: Constant folding - Only steps=1 can be constant folded for opset >= 10 onnx::Slice op. Constant folding not applied. (Triggered internally at ../torch/csrc/jit/passes/onnx/constant_fold.cpp:179.)
+  _C._jit_pass_onnx_graph_shape_type_inference(
+/home/young/anaconda3/envs/vmunet/lib/python3.8/site-packages/torch/onnx/utils.py:1178: UserWarning: The shape inference of prim::Constant type is missing, so it may result in wrong shape inference for the exported graph. Please consider adding it in symbolic function. (Triggered internally at ../torch/csrc/jit/passes/onnx/shape_type_inference.cpp:1884.)
+  _C._jit_pass_onnx_graph_shape_type_inference(
+/home/young/anaconda3/envs/vmunet/lib/python3.8/site-packages/torch/onnx/utils.py:1178: UserWarning: Constant folding - Only steps=1 can be constant folded for opset >= 10 onnx::Slice op. Constant folding not applied. (Triggered internally at ../torch/csrc/jit/passes/onnx/constant_fold.cpp:179.)
+  _C._jit_pass_onnx_graph_shape_type_inference(
+      export done in 1172.7s
+[4/4] validating ONNX vs PyTorch …
+      [warn] pip install onnx onnxruntime for validation
+[ok] /home/young/桌面/testGeModel/DA_strip_inference_portable/weights/rootexp_da_224.onnx (95.0 MB), total 1175.5s
