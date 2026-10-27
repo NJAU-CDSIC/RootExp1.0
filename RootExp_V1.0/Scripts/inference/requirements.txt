@@ -1,7 +1,0 @@
-torch>=1.13
-torchvision
-pillow
-numpy
-einops
-timm
-opencv-python-headless
