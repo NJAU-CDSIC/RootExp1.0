@@ -87,7 +87,7 @@ The folders in the RootExp repository:
 ## 1. Installation
 
 ```bash
-git clone https://github.com/<YOUR_ORG_OR_USER>/RootExp.git
+git clone https://github.com/NJAU-CDSIC/RootExp1.0.git
 cd RootExp
 ```
 
@@ -119,7 +119,7 @@ To keep the GitHub repository within platform size limits, **datasets** (and opt
 | Resource Category | Zenodo Access | Required For |
 |:-----------------:|:-------------:|:------------:|
 | **Datasets** (original + `.npy`) | <https://doi.org/10.5281/zenodo.23983396> | Training, evaluation, case studies |
-| **Pre-trained models** (if not shipped under `RootExp/Pre-trained/`) | <https://doi.org/10.5281/zenodo.23983396> | Inference, transfer / BnaRoot strip demos |
+
 
 Expected layout after download:
 
@@ -171,7 +171,7 @@ ls "SOTA Models/"
 
 ## 5. Citation
 
-If you use RootExp in your research, please cite this repository and the datasets:
+If you use RootExp in your research, please cite this repository and the dataset
 
 - Code: `https://github.com/<YOUR_ORG_OR_USER>/RootExp`
 - Datasets: <https://doi.org/10.5281/zenodo.23983396>
