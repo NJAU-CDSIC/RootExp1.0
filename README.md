@@ -68,9 +68,9 @@ The folders in the RootExp repository:
 
   - ITErRoot: Seitz et al., 2022 (root-specific)
 
-  - ESegFormer: Shi et al., 2025 (SegFormer + EAM)
+  - ESegFormer: Shi et al., 2025 (root-specific)
 
-  - OCRNet: Huang et al., Front. Plant Sci. 2023 — improved OCRNet for cotton-root minirhizotron images (domain-specific; DOI: [10.3389/fpls.2023.1147034](https://doi.org/10.3389/fpls.2023.1147034))
+  - OCRNet: Huang et al., Front. Plant Sci. 2023 — improved OCRNet for cotton-root minirhizotron images (root-specific)
 
 - **Scripts**: Auxiliary scripts for environment, inference, and timing benchmarks
 
