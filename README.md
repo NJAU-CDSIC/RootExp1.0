@@ -76,7 +76,7 @@ The folders in the RootExp repository:
 
   - **env**: `setup_env.sh` (baseline conda env), `link_dataset.sh` (link a dataset into the training path)
 
-  - **inference**: RootExp / BnaRoot strip inference (CLAHE preprocess, strip predict, ONNX export)
+  - **inference**: RootExp / BnaRoot strip inference ( strip predict, ONNX export)
 
   - **comparison**: `benchmark_inference_ms.py` (GPU inference latency @ 224×224)
 
