@@ -173,7 +173,7 @@ ls "SOTA Models/"
 
 If you use RootExp in your research, please cite this repository and the dataset
 
-- Code: `https://github.com/<YOUR_ORG_OR_USER>/RootExp`
+- Code: `https://github.com/NJAU-CDSIC/RootExp1.0.git`
 - Datasets: <https://doi.org/10.5281/zenodo.23983396>
 
 
