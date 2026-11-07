@@ -2,6 +2,8 @@
 
 This repository contains the complete implementation of **RootExp**, a structure-aware deep learning framework for **binary plant-root image segmentation**. 
 
+We also developed a Qt-based desktop application, **RootExp V1.0**, that uses the RootExp model to segment plant roots in images. The installation file is available on the same Zenodo record as the datasets: <https://doi.org/10.5281/zenodo.23983396>.
+
 ---
 
 The folders in the RootExp repository:
@@ -43,14 +45,8 @@ The folders in the RootExp repository:
   - Full archives on Zenodo <https://doi.org/10.5281/zenodo.23983396>:
 
     ```
-    Synthetic_original.zip   Synthetic_npy.zip
-    Wheat_original.zip       Wheat_npy.zip
-    PRMI_original.zip        PRMI_npy.zip
-    RPT_original_part{1,2,3}_of_3.zip   RPT_npy.zip
-    BnaRoot_original.zip     BnaRoot_npy.zip
+    RootExp_Datasets_all.zip
     ```
-
-    (RPT original is split into three parts for upload size limits. Local zip backup: `../RootExp_Datasets_zenodo_zips/`.)
 
 - **SOTA Models**: Nine models used in the comparative study (**architecture code only**):
 
@@ -112,13 +108,14 @@ python -c "import torch; print(torch.__version__, torch.cuda.is_available())"
 
 ## 3. Datasets and model parameters
 
-To keep the GitHub repository within platform size limits, **datasets** (and optionally large checkpoints) are hosted on Zenodo. **Full functionality requires downloading these resources separately**:
+To keep the GitHub repository within platform size limits, **datasets** (and optionally large checkpoints) are hosted on Zenodo. The installation file for the Qt-based software (RootExp V1.0) is on the same record. **Full functionality requires downloading these resources separately**:
 
 ### Essential Zenodo Resources
 
 | Resource Category | Zenodo Access | Required For |
 |:-----------------:|:-------------:|:------------:|
 | **Datasets** (original + `.npy`) | <https://doi.org/10.5281/zenodo.23983396> | Training, evaluation, case studies |
+| **Qt software** (RootExp V1.0) | <https://doi.org/10.5281/zenodo.23983396> | Desktop application that runs RootExp for root segmentation |
 
 
 Expected layout after download:
