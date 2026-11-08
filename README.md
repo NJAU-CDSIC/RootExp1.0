@@ -2,7 +2,7 @@
 
 This repository contains the complete implementation of **RootExp**, a structure-aware deep learning framework for **binary plant-root image segmentation**. 
 
-We also developed a Qt-based desktop application, **RootExp V1.0**, that uses the RootExp model to segment plant roots in images. The installation file is available on the same Zenodo record as the datasets: <https://doi.org/10.5281/zenodo.23983396>.
+We also developed a Qt-based desktop application, **RootExp V1.0** (14 days free), that uses the RootExp model to segment plant roots in images. The installation file is available on the same Zenodo record as the datasets: <https://doi.org/10.5281/zenodo.23983396>.
 
 ---
 
@@ -115,7 +115,7 @@ To keep the GitHub repository within platform size limits, **datasets** (and opt
 | Resource Category | Zenodo Access | Required For |
 |:-----------------:|:-------------:|:------------:|
 | **Datasets** (original + `.npy`) | <https://doi.org/10.5281/zenodo.23983396> | Training, evaluation, case studies |
-| **Qt software** (RootExp V1.0) | <https://doi.org/10.5281/zenodo.23983396> | Desktop application that runs RootExp for root segmentation |
+| **Qt software** (RootExp V1.0 (14 days free) ) | <https://doi.org/10.5281/zenodo.23983396> | Desktop application that runs RootExp for root segmentation |
 
 
 Expected layout after download:
